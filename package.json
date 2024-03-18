@@ -3,6 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/ui-kit-library.umd.cjs",
+  "module": "./dist/ui-kit-library.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ui-kit-library.js",
+      "require": "./dist/ui-kit-library.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
