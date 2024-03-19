@@ -12,6 +12,8 @@ export default defineConfig({
       fileName: "ui-kit-library",
     },
     rollupOptions: {
+      // Путь к главному jsx/tsx файлу
+      input: resolve(__dirname, "src/index.tsx"),
       external: ["react", "react/jsx-runtime"],
     },
     copyPublicDir: false,
@@ -19,6 +21,7 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
+      include: ["lib"],
       insertTypesEntry: true,
     }),
   ],
