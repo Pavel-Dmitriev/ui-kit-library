@@ -1,13 +1,17 @@
 {
-  "name": "ui-kit-library",
-  "private": true,
+  "name": "@Pavel-Dmitriev/ui-kit-library",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Pavel-Dmitriev"
+  },
+  "description": "Библиотека компонентов",
+  "private": false,
   "version": "0.1.0",
   "type": "module",
   "files": [
-    "dist"
+    "dist/**/*"
   ],
-  "main": "./dist/ui-kit-library.umd.cjs",
-  "module": "./dist/ui-kit-library.js",
+  "main": "./dist/ui-kit-library.js",
+  "module": "./dist/ui-kit-library.umd.cjs",
   "types": "./dist/main.d.ts",
   "exports": {
     ".": {
