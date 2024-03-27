@@ -3,6 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/pavel-dmitriev"
   },
+  "homepage": "https://Pavel-Dmitriev.github.io/ui-kit-library/",
   "description": "Библиотека компонентов",
   "private": false,
   "version": "1.0.0",
